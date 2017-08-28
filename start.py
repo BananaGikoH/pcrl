@@ -5,7 +5,7 @@ import json
 f = open("testdata.json")
 jsonData = json.load(f)
 st = json.dumps(jsonData,ensure_ascii=False,indent=4)
-print(st)
+#print(st)
 
 #判定
 bool = True
@@ -22,6 +22,24 @@ print("Decision : "+ str(jsonData["Decision"]) +" -> "+str(bool))
 
 #編集
 jsonData["Decision"] = bool
+
+#template読み込み
+PP = open("testTemplate.json")
+template = json.load(PP)
+
+print("")
+#keysを読み出してDataの中身を表示
+for keys in template["keys"]:
+    print(keys +" : " +jsonData[keys])
+print("")
+
+#changeをもう一回変更
+if True == jsonData[template["keys_change"]]:
+    jsonData[template["keys_change"]] = False
+    print("Decision : True -> False")
+else:
+    jsonData[template["keys_change"]] = True
+    print("Decision : False -> True")
 
 #書き込み
 f = open("testdata.json", "w")
