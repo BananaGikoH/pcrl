@@ -23,6 +23,7 @@ print("Decision : "+ str(jsonData["Decision"]) +" -> "+str(bool))
 #編集
 jsonData["Decision"] = bool
 
+
 #template読み込み
 PP = open("testTemplate.json")
 template = json.load(PP)
@@ -44,3 +45,7 @@ else:
 #書き込み
 f = open("testdata.json", "w")
 json.dump(jsonData, f, ensure_ascii=False,indent=4)
+
+import hashlib
+import hmac
+print(hmac.new(bytearray("綾波レイ","UTF-8"),bytearray("惣流・アスカ・ラングレー","UTF-8"), hashlib.sha256).hexdigest())

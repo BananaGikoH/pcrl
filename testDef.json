@@ -1,0 +1,12 @@
+{
+    "index": {
+        "type": "definition",
+        "basedon":null,
+        "version":{
+            "now":"7cfa305fa1b605ce8a242a9ea2095813",
+            "diff":"none"
+        }
+    },
+    "keys": ["getting","now"],
+    "keys_change": "Decision"
+}
