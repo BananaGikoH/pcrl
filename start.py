@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 import json
 
 #読み込み
@@ -49,3 +50,8 @@ json.dump(jsonData, f, ensure_ascii=False,indent=4)
 import hashlib
 import hmac
 print(hmac.new(bytearray("綾波レイ","UTF-8"),bytearray("惣流・アスカ・ラングレー","UTF-8"), hashlib.sha256).hexdigest())
+
+#testDef読み込み
+dd = open("testDef.json")
+jsondef = json.load(dd)
+
