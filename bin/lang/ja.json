@@ -1,0 +1,7 @@
+{
+    "os": {
+        "bootstrap": {
+            "test" : "test!"
+        }
+    }
+}

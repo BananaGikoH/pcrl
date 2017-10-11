@@ -13,8 +13,8 @@ def start():
     #コマンドライン引数を利用するには上記の状態でargsを使用する
     
     #bootstrap 引数処理等
-    bin.bootstrap.bootstrap.boot(args)
-    
+    if(0!=bin.bootstrap.bootstrap.boot(args)):
+        return 0
     #基幹バージョンの表示
     bin.sys.system.getDefinition()
     

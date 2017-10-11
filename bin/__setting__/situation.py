@@ -7,17 +7,17 @@ class Parameter:
     def __init__(self):
         #Mode
         self.__params["Mode"] = {}
-        #Mode Mode_Test
-        self.__params["Mode"]["Mode_Test"] = False
+        #Mode Mode_Debug
+        self.__params["Mode"]["Mode_Debug"] = False
         #Mode Mode_CommandlineUserInterface
         self.__params["Mode"]["Mode_CUI"] = False
         #FirstStartUp
         self.__params["FirstStartUp"] = False
-
-    # Mode Mode_Test
-    # テストモード
-    def Mode_test(self,bool:bool):
-        self.__params["Mode"]["Mode_Test"] = bool
+    
+    # Mode Mode_Debug
+    # debugモード
+    def Mode_Debug(self,bool:bool):
+        self.__params["Mode"]["Mode_Debug"] = bool
 
     # Mode Mode_CommandlineUserInterface
     # CUIモード
@@ -31,13 +31,20 @@ class Parameter:
      
     def getParams(self):
         return self.__params
-        
+    
+    def setParams(self,params:dict):
+        self.__params = params
+
+
+
+
+
 if __name__ == "__main__":
     ss = Parameter()
     print("nomal : " + str(ss.getParams()))
-    ss.Mode_test(True)
+    ss.Mode_Debug(True)
     print("Mode_test : "+str(ss.getParams()))
-    ss.Mode_test(False)
+    ss.Mode_Debug(False)
     
     ss.Mode_CUI(True)
     print("Mode_CUI : "+str(ss.getParams()))
