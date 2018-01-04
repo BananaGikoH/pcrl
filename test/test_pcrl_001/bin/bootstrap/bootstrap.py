@@ -31,18 +31,16 @@ def boot(args):
 
     
     
-    # CUI
+    #CUI
     
     # debug modeか否か
-    if (param.getParams()["Mode"]["Mode_debug"] == True):
+    if (param.getParams()["Mode"]["Mode_Debug"] == True):
         print("now debug mode ...")
     #UI選択
     print("bootstrap ...")
     
     print("bootstrap end ...")
     #とりあえずGUIで作成する
-    
-    print("test")
     return 0
 
 
