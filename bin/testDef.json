@@ -1,0 +1,66 @@
+{
+    "index": {
+        "type": "definition" ,
+        "basedon": null ,
+        "version": {
+            "name": "Standard" ,
+            "uniqueHash": "" ,
+            "previousVersion": "" ,
+            "diff": "none"
+        }
+    },
+    "before": {
+        "no_1": {
+            "key": "index" ,
+            "value": {
+                "no_1": {
+                    "key": "type" ,
+                    "value": [
+                        "data" ,
+                        "template" ,
+                        "definition" ,
+                        "difference"
+                    ]
+                } ,
+                "no_2": {
+                    "key": "basedon" ,
+                    "value": "unique"
+                } ,
+                "no_3": {
+                    "key": "version" ,
+                    "value": {
+                        "no_1": {
+                            "key": "name" ,
+                            "value": "unique"
+                        } ,
+                        "no_2": {
+                            "key": "uniqueHash" ,
+                            "value": "unique"
+                        } ,
+                        "no_3": {
+                            "key": "previousVersion" ,
+                            "value": "unique"
+                        } ,
+                        "no_4": {
+                            "key": "diff" ,
+                            "value": "unique"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "during":{
+        "no_1": {
+            "key": "keys" ,
+            "value": "unique"
+        },
+        "no_2":{
+            "key": "keys_change" ,
+            "value": "unique"
+        }
+    },
+    "after":{
+        "no_1":null
+    }
+}
