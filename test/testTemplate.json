@@ -1,8 +1,0 @@
-{
-    "index": {
-        "type": "template",
-        "basedon":"test"
-    },
-    "keys": ["getting","now"],
-    "keys_change": "Decision"
-}
